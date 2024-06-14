@@ -25,7 +25,7 @@ X_test = sc.transform(X_test)
 
 #%% SVM
 
-classifier = SVC(random_state=0)
+classifier = SVC(kernel='linear', random_state=0)
 classifier.fit(X_train, y_train)
 
 #%% Prediction
